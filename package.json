@@ -1,0 +1,37 @@
+{
+  "name": "thryvetech-esp32-flash tool",
+  "version": "1.0.0",
+  "description": "A simple and intuitive desktop tool to flash firmware to ESP32 devices using esptool.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Akshayan Sinha",
+  "license": "ISC",
+  "type": "commonjs",
+  "build": {
+    "appId": "com.thryvetech.esp32flasher",
+    "productName": "ThryveTech ESP Flash Tool",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist",
+      "!node_modules/.cache"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "favicon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^36.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "serialport": "^13.0.0"
+  }
+}

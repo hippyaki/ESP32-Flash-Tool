@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ThryveTech ESP Flash Tool</title>
+  
+</head>
+<body>
+
+  <label>COM Port:</label>
+  <select id="comPort"></select><br><br>
+
+  <label>Bootloader:</label>
+  <input type="file" id="bootloader"><br><br>
+
+  <label>Partition Table:</label>
+  <input type="file" id="partitions"><br><br>
+
+  <label>BootApp:</label>
+  <input type="file" id="bootapp"><br><br>
+
+  <label>Code Binary:</label>
+  <input type="file" id="code"><br><br>
+
+  <button  id="generateBtn">Flash ESP</button>
+
+  <pre id="output" style="background: #eee; padding: 10px; margin-top: 10px;"></pre>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

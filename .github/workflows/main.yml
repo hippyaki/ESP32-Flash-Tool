@@ -2,8 +2,8 @@ name: Flash Tool Executable - Build & Release
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - 'v*'
 
 jobs:
   build:

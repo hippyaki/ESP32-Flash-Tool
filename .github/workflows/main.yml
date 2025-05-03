@@ -2,8 +2,8 @@ name: Flash Tool Executable - Build & Release
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - master
 
 jobs:
   build:
@@ -31,5 +31,6 @@ jobs:
         with:
           files: |
             dist/win-unpacked/*.exe
+          tag_name: ${{ steps.bump.outputs.new_tag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

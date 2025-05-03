@@ -1,5 +1,5 @@
 {
-  "name": "thryvetech-esp32-flash tool",
+  "name": "thryvetech-esp32-flash-tool",
   "version": "1.0.0",
   "description": "A simple and intuitive desktop tool to flash firmware to ESP32 devices using esptool.",
   "main": "main.js",
